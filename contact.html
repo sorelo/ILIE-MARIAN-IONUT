@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent-a-Car - Contact</title>
+    <style>
+        main { background-color: rgba(255, 255, 255, 0.8); margin: 30px; padding: 20px; border-radius: 8px; }
+        .contact-container { display: flex; flex-wrap: wrap; gap: 40px; }
+        .contact-container > div { flex: 1; min-width: 280px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { width: 95%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        .form-group button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 1em;}
+    </style>
+</head>
+<body style="background-color: rgba(75, 143, 7, 0.493); font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+
+<header>
+    <h1 style= "text-align:center; background-color: rgba(128, 255, 0, 0.288);border: none; padding: 8px 15px; border-radius: 4px;">Rent-A-Car</h1>
+    <nav style="display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 10px;">
+        <a href="Home.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Acasa</a>
+        <a href="rezerva.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Rezerva Acum</a>
+        <a href="flota.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Flota noastra</a>
+        <a href="oferte.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Oferte</a>
+        <a href="contact.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Contact</a>
+        <a href="despre.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Despre noi</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Contactează-ne</h2>
+    <p>Ai întrebări? Completează formularul de mai jos sau folosește datele de contact.</p>
+    
+    <div class="contact-container">
+        <div>
+            <h3>Formular de contact</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nume">Nume:</label>
+                    <input type="text" id="nume" name="nume">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="mesaj">Mesajul tău:</label>
+                    <textarea id="mesaj" name="mesaj" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Trimite Mesajul</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h3>Date de Contact</h3>
+            <p><strong>Adresă:</strong> Strada Exemplului Nr. 10, București, România</p>
+            <p><strong>Telefon:</strong> +40 700 123 456</p>
+            <p><strong>Email:</strong> contact@rentacar-exemplu.ro</p>
+            <p><strong>Program:</strong> Luni - Duminică: 08:00 - 20:00</p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

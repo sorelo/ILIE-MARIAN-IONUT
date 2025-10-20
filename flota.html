@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent-a-Car - Flota noastră</title>
+    <style>
+        main { background-color: rgba(255, 255, 255, 0.8); margin: 30px; padding: 20px; border-radius: 8px; }
+        
+        .car-listing { 
+            background-color: #fff; 
+            border: 1px solid #ddd; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .car-listing h3 { margin-top: 0; }
+        
+        .car-image {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: rgba(75, 143, 7, 0.493); font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+
+<header>
+    <h1 style= "text-align:center; background-color: rgba(128, 255, 0, 0.288);border: none; padding: 8px 15px; border-radius: 4px;">Rent-A-Car</h1>
+    <nav style="display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 10px;">
+        <a href="Home.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Acasa</a>
+        <a href="rezerva.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Rezerva Acum</a>
+        <a href="flota.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Flota noastra</a>
+        <a href="oferte.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Oferte</a>
+        <a href="contact.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Contact</a>
+        <a href="despre.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Despre noi</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Flota noastră de autoturisme</h2>
+    
+    <div class="car-listing">
+        <img src="logan.png" alt="Imagine Dacia Logan" class="car-image">
+        <div>
+            <h3>Clasa Economică - Dacia Logan</h3>
+            <p>Perfectă pentru oraș, consum redus. Dotată cu aer condiționat și sistem audio.</p>
+            <p><strong>Preț: de la 20€ / zi</strong></p>
+        </div>
+    </div>
+    
+    <div class="car-listing">
+        <img src="duster.png" alt="Imagine Dacia Duster" class="car-image">
+        <div>
+            <h3>Clasa SUV - Dacia Duster</h3>
+            <p>Ideală pentru aventură și drumuri extra-urbane. Spațioasă și robustă.</p>
+            <p><strong>Preț: de la 35€ / zi</strong></p>
+        </div>
+    </div>
+
+    <div class="car-listing">
+        <img src="passat.png" alt="Imagine VW Passat" class="car-image">
+        <div>
+            <h3>Clasa Premium - VW Passat</h3>
+            <p>Eleganță și confort pentru călătorii de afaceri. Cutie automată și dotări de top.</p>
+            <p><strong>Preț: de la 50€ / zi</strong></p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

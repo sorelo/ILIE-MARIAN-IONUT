@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent-a-Car - Rezervă Acum</title>
+    <style>
+        main { background-color: rgba(255, 255, 255, 0.8); margin: 30px; padding: 20px; border-radius: 8px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input { width: 95%; max-width: 400px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        .form-group button { background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-family: inherit; }
+    </style>
+</head>
+<body style="background-color: rgba(75, 143, 7, 0.493); font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+
+<header>
+    <h1 style= "text-align:center; background-color: rgba(128, 255, 0, 0.288);border: none; padding: 8px 15px; border-radius: 4px;">Rent-A-Car</h1>
+    <nav style="display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 10px;">
+        <a href="Home.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Acasa</a>
+        <a href="rezerva.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Rezerva Acum</a>
+        <a href="flota.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Flota noastra</a>
+        <a href="oferte.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Oferte</a>
+        <a href="contact.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Contact</a>
+        <a href="despre.html" style ="background-color: rgba(128, 255, 0, 0.288); border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer ; font-weight: bold; text-decoration: none; color: black;">Despre noi</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Rezervă o mașină</h2>
+    <p>Completează detaliile de mai jos pentru a verifica disponibilitatea.</p>
+    
+    <form>
+        <div class="form-group">
+            <label for="preluare">Data și ora preluării:</label>
+            <input type="datetime-local" id="preluare" name="preluare">
+        </div>
+        <div class="form-group">
+            <label for="returnare">Data și ora returnării:</label>
+            <input type="datetime-local" id="returnare" name="returnare">
+        </div>
+         <div class="form-group">
+            <label for="locatie">Locația de preluare:</label>
+            <input type="text" id="locatie" name="locatie" placeholder="Ex: Aeroport Otopeni">
+        </div>
+        <div class="form-group">
+            <button type="submit">Caută mașini disponibile</button>
+        </div>
+    </form>
+</main>
+
+</body>
+</html>
