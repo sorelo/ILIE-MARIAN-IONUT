@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script>
+    var l1 = 10;
+    var l2 = 15;
+    var l3 = 12;
+    if (l1 + l2 > l3 && l1 + l3 > l2 && l2 + l3 > l1) {
+        console.log("Se poate forma un triunghi.");
+        if (l1 == l2 && l2 == l3) {
+            console.log("Triunghi echilateral.");
+        } else if (l1 == l2 || l1 == l3 || l2 == l3) {
+            console.log("Triunghi isoscel.");
+        } else {
+            console.log("Triunghi oarecare.");
+        }
+    }
+    else {
+        console.log("Nu se poate forma un triunghi.");
+    }
+</script>
+</html>
