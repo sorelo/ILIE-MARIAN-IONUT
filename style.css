@@ -1,0 +1,145 @@
+/* style.css - Versiunea Finala cu Fundal Pexels si Buton Top */
+
+body {
+    /* Setarea fontului si a culorii de baza pentru text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* --- SETARI FUNDAL --- */
+    /* Imaginea de fundal preluata extern */
+    background-image: url('https://images.pexels.com/photos/97079/pexels-photo-97079.jpeg'); 
+    background-size: cover;          /* Imaginea acopera tot ecranul fara sa se repete */
+    background-position: center;     /* Poza ramane centrata indiferent de rezolutie */
+    background-attachment: fixed;    /* Efect de paralaxa: fundalul ramane fix la scroll */
+    background-repeat: no-repeat;
+}
+
+/* Stiluri pentru containerul principal care tine continutul paginilor */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 30px auto;
+    min-height: 80vh;
+    /* Efect de transparenta pentru a lasa fundalul sa se vada usor */
+    background-color: rgba(255, 255, 255, 0.92); 
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Umbra pentru a scoate continutul in evidenta */
+    width: 90%; 
+    box-sizing: border-box;
+}
+
+/* Stilizarea zonei de antet (titlu si navigatie) */
+header {
+    background-color: #222; 
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite elementelor sa treaca pe randul nou pe ecrane mici */
+    opacity: 0.98;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 { margin: 0; padding-left: 20px; }
+
+/* Designul meniului de navigatie */
+nav { display: flex; gap: 15px; padding-right: 20px; }
+nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 10px; transition: color 0.3s; }
+/* Efect la trecerea mouse-ului si marcarea paginii active */
+nav a:hover, nav a.active-nav { color: #4CAF50; border-bottom: 2px solid #4CAF50; }
+
+/* Stiluri pentru sectiunea laterala (sidebar) */
+aside { background: #fff; padding: 20px; margin: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Stiluri pentru subsolul paginii */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Asigura ca footer-ul ramane mereu la baza paginii */
+    opacity: 0.98;
+}
+
+/* Aspectul formularelor (inputuri si etichete) */
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+/* Stilizarea butoanelor principale */
+button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 1rem; font-weight: bold;}
+button:hover { background-color: #45a049; }
+
+/* Modul de afisare a masinilor in liste (Flota/Profil) */
+.car-listing {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Setari pentru imaginile masinilor */
+.car-image {
+    width: 200px; height: 130px;
+    object-fit: cover; /* Imaginea isi pastreaza proportiile fara sa se deformeze */
+    border-radius: 6px; border: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+/* --- BUTONUL BACK TO TOP --- */
+/* Pozitionare fixa pe ecran pentru butonul de urcat sus */
+#scrollTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: #4CAF50; 
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%; 
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: background-color 0.3s, transform 0.3s;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px; 
+}
+
+#scrollTopBtn:hover {
+    background-color: #333; 
+    transform: translateY(-5px); /* Efect de ridicare la hover */
+}
+
+/* INTERFATA RESPONSIVA (pentru telefoane si tablete) */
+@media (max-width: 768px) {
+    /* Transformam listele orizontale in liste verticale pe ecrane mici */
+    .car-listing { flex-direction: column; text-align: center; align-items: center; }
+    .car-image { width: 100%; max-width: 280px; height: 180px; margin-bottom: 10px; }
+    nav { width: 100%; justify-content: center; margin-top: 10px; }
+    .contact-container { grid-template-columns: 1fr; }
+    main { width: 95%; padding: 1rem; margin: 20px auto; }
+    #scrollTopBtn { bottom: 20px; right: 20px; width: 45px; height: 45px; line-height: 45px; font-size: 20px; }
+}
+
+/* Stilizari specifice pentru oferte si containerele de contact/autentificare */
+.offer { background: #fff; border-left: 5px solid #ff9800; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.auth-container { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+.auth-box { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 100%; max-width: 350px; }
